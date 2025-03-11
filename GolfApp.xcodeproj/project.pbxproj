@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1AC7C52D7FA24C0082D3DD /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1AC7C42D7FA2450082D3DD /* RequestInterceptor.swift */; };
+		2F1AC7C72D7FA9810082D3DD /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1AC7C62D7FA97A0082D3DD /* DataExtension.swift */; };
+		2F1AC7C92D7FAAE50082D3DD /* KeyedDecodingContainerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1AC7C82D7FAAE10082D3DD /* KeyedDecodingContainerExtension.swift */; };
+		2F1AC7E62D7FB4B70082D3DD /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1AC7E52D7FB4B00082D3DD /* ColorExtension.swift */; };
+		2F347AC42D7F575B005B0CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F347ABF2D7F575B005B0CBC /* Assets.xcassets */; };
+		2F347AC62D7F575B005B0CBC /* GolfAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AC12D7F575B005B0CBC /* GolfAppApp.swift */; };
+		2F347AC82D7F5789005B0CBC /* GolfCourseListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AC72D7F5789005B0CBC /* GolfCourseListingView.swift */; };
+		2F347ACA2D7F57A3005B0CBC /* GolfCourseListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AC92D7F5797005B0CBC /* GolfCourseListingViewModel.swift */; };
+		2F347ACC2D7F57B8005B0CBC /* GolfCourseListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347ACB2D7F57AA005B0CBC /* GolfCourseListingModel.swift */; };
+		2F347AD42D7F57DE005B0CBC /* GolfCourseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AD32D7F57DE005B0CBC /* GolfCourseDetailsView.swift */; };
+		2F347AD62D7F57EA005B0CBC /* GolfCourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AD52D7F57E3005B0CBC /* GolfCourseViewModel.swift */; };
+		2F347AD82D7F57F2005B0CBC /* GolfCourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AD72D7F57ED005B0CBC /* GolfCourseModel.swift */; };
+		2F347AE02D7F59C0005B0CBC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347ADF2D7F59BE005B0CBC /* Utils.swift */; };
+		2F347AE22D7F5B43005B0CBC /* ColorCostants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AE12D7F5B37005B0CBC /* ColorCostants.swift */; };
+		2F347AE42D7F5B56005B0CBC /* ImageConstatnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AE32D7F5B4F005B0CBC /* ImageConstatnts.swift */; };
+		2F347AE62D7F5B6E005B0CBC /* UserDefaultConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AE52D7F5B67005B0CBC /* UserDefaultConstants.swift */; };
+		2F347AE82D7F5B7F005B0CBC /* FontConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AE72D7F5B7B005B0CBC /* FontConstants.swift */; };
+		2F347AEB2D7F5BC9005B0CBC /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AEA2D7F5BC5005B0CBC /* ViewExtension.swift */; };
+		2F347AED2D7F5CBA005B0CBC /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AEC2D7F5CB5005B0CBC /* FontExtension.swift */; };
+		2F347AEF2D7F5D67005B0CBC /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AEE2D7F5D64005B0CBC /* StringExtension.swift */; };
+		2F347AF12D7F5D71005B0CBC /* UserDefaultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F347AF02D7F5D6B005B0CBC /* UserDefaultExtension.swift */; };
+		2F347AF42D7F8AC6005B0CBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F347AF32D7F8AC6005B0CBC /* Preview Assets.xcassets */; };
+		2F7D5E182D7FB7A1004F4CD8 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F7D5E172D7FB7A1004F4CD8 /* Poppins-SemiBold.ttf */; };
+		2F7D5E1A2D7FB7FA004F4CD8 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F7D5E192D7FB7FA004F4CD8 /* Poppins-Bold.ttf */; };
+		2F7D5E1C2D7FB804004F4CD8 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F7D5E1B2D7FB804004F4CD8 /* Poppins-Medium.ttf */; };
+		2F7D5E1E2D7FB80B004F4CD8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F7D5E1D2D7FB80B004F4CD8 /* Poppins-Regular.ttf */; };
+		2F7D5E222D7FCBE7004F4CD8 /* KeyboardDoneModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D5E212D7FCBDE004F4CD8 /* KeyboardDoneModifier.swift */; };
+		2F7D5E272D7FCDBE004F4CD8 /* GolfCourseListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D5E262D7FCDBE004F4CD8 /* GolfCourseListingCell.swift */; };
+		2F7D5E2D2D7FCF7E004F4CD8 /* GolfCourseListingSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7D5E2C2D7FCF7E004F4CD8 /* GolfCourseListingSearchView.swift */; };
+		2FD3655D2D7F994A0070717A /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3655C2D7F994A0070717A /* CommonAssets.xcassets */; };
+		2FD3E37C2D7F90D90016CD95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FD3E37B2D7F90D90016CD95 /* LaunchScreen.storyboard */; };
+		2FD3E37E2D7F936D0016CD95 /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3E37D2D7F93680016CD95 /* ServiceConfig.swift */; };
+		2FD3E3802D7F948C0016CD95 /* ServerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3E37F2D7F94870016CD95 /* ServerInterface.swift */; };
+		2FD3E3832D7F95300016CD95 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2FD3E3822D7F95300016CD95 /* Alamofire */; };
+		2FE14A1A2D7FD659002EE6C1 /* golfIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FE14A192D7FD659002EE6C1 /* golfIcon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F1AC7C42D7FA2450082D3DD /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
+		2F1AC7C62D7FA97A0082D3DD /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		2F1AC7C82D7FAAE10082D3DD /* KeyedDecodingContainerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedDecodingContainerExtension.swift; sourceTree = "<group>"; };
+		2F1AC7E52D7FB4B00082D3DD /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		2F347AA42D7F55FA005B0CBC /* GolfApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F347ABF2D7F575B005B0CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F347AC12D7F575B005B0CBC /* GolfAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfAppApp.swift; sourceTree = "<group>"; };
+		2F347AC72D7F5789005B0CBC /* GolfCourseListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseListingView.swift; sourceTree = "<group>"; };
+		2F347AC92D7F5797005B0CBC /* GolfCourseListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseListingViewModel.swift; sourceTree = "<group>"; };
+		2F347ACB2D7F57AA005B0CBC /* GolfCourseListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseListingModel.swift; sourceTree = "<group>"; };
+		2F347AD32D7F57DE005B0CBC /* GolfCourseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseDetailsView.swift; sourceTree = "<group>"; };
+		2F347AD52D7F57E3005B0CBC /* GolfCourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseViewModel.swift; sourceTree = "<group>"; };
+		2F347AD72D7F57ED005B0CBC /* GolfCourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseModel.swift; sourceTree = "<group>"; };
+		2F347ADF2D7F59BE005B0CBC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2F347AE12D7F5B37005B0CBC /* ColorCostants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCostants.swift; sourceTree = "<group>"; };
+		2F347AE32D7F5B4F005B0CBC /* ImageConstatnts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstatnts.swift; sourceTree = "<group>"; };
+		2F347AE52D7F5B67005B0CBC /* UserDefaultConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultConstants.swift; sourceTree = "<group>"; };
+		2F347AE72D7F5B7B005B0CBC /* FontConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstants.swift; sourceTree = "<group>"; };
+		2F347AEA2D7F5BC5005B0CBC /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		2F347AEC2D7F5CB5005B0CBC /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		2F347AEE2D7F5D64005B0CBC /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2F347AF02D7F5D6B005B0CBC /* UserDefaultExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtension.swift; sourceTree = "<group>"; };
+		2F347AF32D7F8AC6005B0CBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2F7D5E172D7FB7A1004F4CD8 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		2F7D5E192D7FB7FA004F4CD8 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		2F7D5E1B2D7FB804004F4CD8 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		2F7D5E1D2D7FB80B004F4CD8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		2F7D5E212D7FCBDE004F4CD8 /* KeyboardDoneModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDoneModifier.swift; sourceTree = "<group>"; };
+		2F7D5E262D7FCDBE004F4CD8 /* GolfCourseListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseListingCell.swift; sourceTree = "<group>"; };
+		2F7D5E2C2D7FCF7E004F4CD8 /* GolfCourseListingSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfCourseListingSearchView.swift; sourceTree = "<group>"; };
+		2FD3655C2D7F994A0070717A /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
+		2FD3E37A2D7F8F470016CD95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2FD3E37B2D7F90D90016CD95 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FD3E37D2D7F93680016CD95 /* ServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		2FD3E37F2D7F94870016CD95 /* ServerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerInterface.swift; sourceTree = "<group>"; };
+		2FE14A192D7FD659002EE6C1 /* golfIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = golfIcon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F347AA12D7F55FA005B0CBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD3E3832D7F95300016CD95 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F347A9B2D7F55FA005B0CBC = {
+			isa = PBXGroup;
+			children = (
+				2F347AC22D7F575B005B0CBC /* GolfApp */,
+				2F347AA52D7F55FA005B0CBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F347AA52D7F55FA005B0CBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AA42D7F55FA005B0CBC /* GolfApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F347ABB2D7F575B005B0CBC /* GolfCourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AD32D7F57DE005B0CBC /* GolfCourseDetailsView.swift */,
+				2F347AD52D7F57E3005B0CBC /* GolfCourseViewModel.swift */,
+				2F347AD72D7F57ED005B0CBC /* GolfCourseModel.swift */,
+			);
+			path = GolfCourseDetails;
+			sourceTree = "<group>";
+		};
+		2F347ABC2D7F575B005B0CBC /* GolfCoursesListing */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AC72D7F5789005B0CBC /* GolfCourseListingView.swift */,
+				2F347AC92D7F5797005B0CBC /* GolfCourseListingViewModel.swift */,
+				2F347ACB2D7F57AA005B0CBC /* GolfCourseListingModel.swift */,
+				2F7D5E232D7FCD9A004F4CD8 /* Views */,
+			);
+			path = GolfCoursesListing;
+			sourceTree = "<group>";
+		};
+		2F347ABD2D7F575B005B0CBC /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2F347ABC2D7F575B005B0CBC /* GolfCoursesListing */,
+				2F347ABB2D7F575B005B0CBC /* GolfCourseDetails */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		2F347ABE2D7F575B005B0CBC /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AC12D7F575B005B0CBC /* GolfAppApp.swift */,
+				2F347ABD2D7F575B005B0CBC /* Dashboard */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		2F347AC22D7F575B005B0CBC /* GolfApp */ = {
+			isa = PBXGroup;
+			children = (
+				2FD3E37A2D7F8F470016CD95 /* Info.plist */,
+				2F347ABE2D7F575B005B0CBC /* Src */,
+				2F7D5E1F2D7FCBC9004F4CD8 /* Components */,
+				2F347ADC2D7F5925005B0CBC /* Network */,
+				2F347ADB2D7F591A005B0CBC /* Utility */,
+				2F347AD92D7F58E0005B0CBC /* Resources */,
+				2F347AF22D7F5E95005B0CBC /* Preview Content */,
+				2FD3E37B2D7F90D90016CD95 /* LaunchScreen.storyboard */,
+			);
+			path = GolfApp;
+			sourceTree = "<group>";
+		};
+		2F347AD92D7F58E0005B0CBC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2F7D5E162D7FB78C004F4CD8 /* Fonts */,
+				2F347ADA2D7F58F7005B0CBC /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2F347ADA2D7F58F7005B0CBC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2F347ABF2D7F575B005B0CBC /* Assets.xcassets */,
+				2FD3655C2D7F994A0070717A /* CommonAssets.xcassets */,
+				2FE14A192D7FD659002EE6C1 /* golfIcon.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		2F347ADB2D7F591A005B0CBC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2F347ADF2D7F59BE005B0CBC /* Utils.swift */,
+				2F347ADD2D7F597E005B0CBC /* Constants */,
+				2F347ADE2D7F59AD005B0CBC /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2F347ADC2D7F5925005B0CBC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2FD3E37D2D7F93680016CD95 /* ServiceConfig.swift */,
+				2FD3E37F2D7F94870016CD95 /* ServerInterface.swift */,
+				2F1AC7C42D7FA2450082D3DD /* RequestInterceptor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2F347ADD2D7F597E005B0CBC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AE12D7F5B37005B0CBC /* ColorCostants.swift */,
+				2F347AE32D7F5B4F005B0CBC /* ImageConstatnts.swift */,
+				2F347AE52D7F5B67005B0CBC /* UserDefaultConstants.swift */,
+				2F347AE72D7F5B7B005B0CBC /* FontConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2F347ADE2D7F59AD005B0CBC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AE92D7F5BB9005B0CBC /* SwiftUIExtensions */,
+				2F347AF02D7F5D6B005B0CBC /* UserDefaultExtension.swift */,
+				2F347AEE2D7F5D64005B0CBC /* StringExtension.swift */,
+				2F1AC7C62D7FA97A0082D3DD /* DataExtension.swift */,
+				2F1AC7C82D7FAAE10082D3DD /* KeyedDecodingContainerExtension.swift */,
+				2F1AC7E52D7FB4B00082D3DD /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2F347AE92D7F5BB9005B0CBC /* SwiftUIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AEA2D7F5BC5005B0CBC /* ViewExtension.swift */,
+				2F347AEC2D7F5CB5005B0CBC /* FontExtension.swift */,
+			);
+			path = SwiftUIExtensions;
+			sourceTree = "<group>";
+		};
+		2F347AF22D7F5E95005B0CBC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2F347AF32D7F8AC6005B0CBC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F7D5E162D7FB78C004F4CD8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2F7D5E192D7FB7FA004F4CD8 /* Poppins-Bold.ttf */,
+				2F7D5E172D7FB7A1004F4CD8 /* Poppins-SemiBold.ttf */,
+				2F7D5E1B2D7FB804004F4CD8 /* Poppins-Medium.ttf */,
+				2F7D5E1D2D7FB80B004F4CD8 /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2F7D5E1F2D7FCBC9004F4CD8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2F7D5E202D7FCBD6004F4CD8 /* ViewModifiers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2F7D5E202D7FCBD6004F4CD8 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2F7D5E212D7FCBDE004F4CD8 /* KeyboardDoneModifier.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		2F7D5E232D7FCD9A004F4CD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2F7D5E262D7FCDBE004F4CD8 /* GolfCourseListingCell.swift */,
+				2F7D5E2C2D7FCF7E004F4CD8 /* GolfCourseListingSearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F347AA32D7F55FA005B0CBC /* GolfApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F347AB22D7F55FD005B0CBC /* Build configuration list for PBXNativeTarget "GolfApp" */;
+			buildPhases = (
+				2F347AA02D7F55FA005B0CBC /* Sources */,
+				2F347AA12D7F55FA005B0CBC /* Frameworks */,
+				2F347AA22D7F55FA005B0CBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolfApp;
+			packageProductDependencies = (
+				2FD3E3822D7F95300016CD95 /* Alamofire */,
+			);
+			productName = GolfApp;
+			productReference = 2F347AA42D7F55FA005B0CBC /* GolfApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F347A9C2D7F55FA005B0CBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					2F347AA32D7F55FA005B0CBC = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 2F347A9F2D7F55FA005B0CBC /* Build configuration list for PBXProject "GolfApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F347A9B2D7F55FA005B0CBC;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2FD3E3812D7F952F0016CD95 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2F347AA52D7F55FA005B0CBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F347AA32D7F55FA005B0CBC /* GolfApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F347AA22D7F55FA005B0CBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7D5E182D7FB7A1004F4CD8 /* Poppins-SemiBold.ttf in Resources */,
+				2FE14A1A2D7FD659002EE6C1 /* golfIcon.png in Resources */,
+				2F7D5E1C2D7FB804004F4CD8 /* Poppins-Medium.ttf in Resources */,
+				2F7D5E1A2D7FB7FA004F4CD8 /* Poppins-Bold.ttf in Resources */,
+				2FD3655D2D7F994A0070717A /* CommonAssets.xcassets in Resources */,
+				2FD3E37C2D7F90D90016CD95 /* LaunchScreen.storyboard in Resources */,
+				2F347AC42D7F575B005B0CBC /* Assets.xcassets in Resources */,
+				2F347AF42D7F8AC6005B0CBC /* Preview Assets.xcassets in Resources */,
+				2F7D5E1E2D7FB80B004F4CD8 /* Poppins-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F347AA02D7F55FA005B0CBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F347AE22D7F5B43005B0CBC /* ColorCostants.swift in Sources */,
+				2F347AD62D7F57EA005B0CBC /* GolfCourseViewModel.swift in Sources */,
+				2F347AEF2D7F5D67005B0CBC /* StringExtension.swift in Sources */,
+				2F347AED2D7F5CBA005B0CBC /* FontExtension.swift in Sources */,
+				2F347AD42D7F57DE005B0CBC /* GolfCourseDetailsView.swift in Sources */,
+				2F347AD82D7F57F2005B0CBC /* GolfCourseModel.swift in Sources */,
+				2F347AF12D7F5D71005B0CBC /* UserDefaultExtension.swift in Sources */,
+				2F1AC7C72D7FA9810082D3DD /* DataExtension.swift in Sources */,
+				2F1AC7C52D7FA24C0082D3DD /* RequestInterceptor.swift in Sources */,
+				2F1AC7E62D7FB4B70082D3DD /* ColorExtension.swift in Sources */,
+				2F347ACA2D7F57A3005B0CBC /* GolfCourseListingViewModel.swift in Sources */,
+				2F347AE62D7F5B6E005B0CBC /* UserDefaultConstants.swift in Sources */,
+				2FD3E37E2D7F936D0016CD95 /* ServiceConfig.swift in Sources */,
+				2F347AE82D7F5B7F005B0CBC /* FontConstants.swift in Sources */,
+				2F1AC7C92D7FAAE50082D3DD /* KeyedDecodingContainerExtension.swift in Sources */,
+				2F347ACC2D7F57B8005B0CBC /* GolfCourseListingModel.swift in Sources */,
+				2FD3E3802D7F948C0016CD95 /* ServerInterface.swift in Sources */,
+				2F7D5E2D2D7FCF7E004F4CD8 /* GolfCourseListingSearchView.swift in Sources */,
+				2F7D5E272D7FCDBE004F4CD8 /* GolfCourseListingCell.swift in Sources */,
+				2F347AE42D7F5B56005B0CBC /* ImageConstatnts.swift in Sources */,
+				2F7D5E222D7FCBE7004F4CD8 /* KeyboardDoneModifier.swift in Sources */,
+				2F347AC82D7F5789005B0CBC /* GolfCourseListingView.swift in Sources */,
+				2F347AC62D7F575B005B0CBC /* GolfAppApp.swift in Sources */,
+				2F347AE02D7F59C0005B0CBC /* Utils.swift in Sources */,
+				2F347AEB2D7F5BC9005B0CBC /* ViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2F347AB02D7F55FD005B0CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F347AB12D7F55FD005B0CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F347AB32D7F55FD005B0CBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GolfApp/Preview Content\"";
+				DEVELOPMENT_TEAM = NHJRX65G34;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GolfApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.GolfApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F347AB42D7F55FD005B0CBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GolfApp/Preview Content\"";
+				DEVELOPMENT_TEAM = NHJRX65G34;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GolfApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.GolfApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F347A9F2D7F55FA005B0CBC /* Build configuration list for PBXProject "GolfApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F347AB02D7F55FD005B0CBC /* Debug */,
+				2F347AB12D7F55FD005B0CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F347AB22D7F55FD005B0CBC /* Build configuration list for PBXNativeTarget "GolfApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F347AB32D7F55FD005B0CBC /* Debug */,
+				2F347AB42D7F55FD005B0CBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FD3E3812D7F952F0016CD95 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FD3E3822D7F95300016CD95 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FD3E3812D7F952F0016CD95 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2F347A9C2D7F55FA005B0CBC /* Project object */;
+}
